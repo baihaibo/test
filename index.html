@@ -59,5 +59,14 @@
         <strong>请点击右上角, 选择<br/>【在浏览器中打开】以便下载</strong>
     </div>
 </body>
-
 </html>
+<script>
+//验证是否为微信浏览器
+(function(){
+    var ua = navigator.userAgent.toLowerCase(),
+        tipsLayer = document.querySelector(".tips");
+        if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+            tipsLayer.style.display = "block";
+        }
+})();
+</script>
