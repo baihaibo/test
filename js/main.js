@@ -1,10 +1,3 @@
-	(function(){
-    var ua = navigator.userAgent.toLowerCase(),
-        tipsLayer = document.querySelector(".tips");
-        if(ua.match(/MicroMessenger/i) == 'micromessenger'){
-            tipsLayer.style.display = "block";
-        }
-	})();
 	function downloadandroid(){
 		window.location.href="http://qdzs.jxict.cn/app/qdzs.apk";
 	}
